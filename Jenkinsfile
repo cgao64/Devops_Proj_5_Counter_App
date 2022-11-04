@@ -13,5 +13,11 @@ pipeline {
                 sh 'mvm test'
             }
         }
+
+        stage('Integration testing') {
+            steps {
+                sh 'mvm verify -DiskUnitTests'
+            }
+        }
     }
 }
