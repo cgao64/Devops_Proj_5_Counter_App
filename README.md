@@ -3,6 +3,7 @@ This is a demo Devops project demonstrating a CI/CD Pipeline
 
 There are two Jenkin files, one to perform CI and one to perform CD
 
+
 Continuous Intgeration:
 
 In the CI Jenkins file, a pipeline script was written using Maven to perform unit tests, perform integration
@@ -13,6 +14,7 @@ The resulting build was then sent to SonarQube for static code analysis, where i
 After passing the tests of SonarQube and quality gate, the project was uploaded to Nexus, with one that is the project and one as a snapshot
 
 Finally, the project was created into an image using a Dockerfile and pushed to DockerHub
+
 
 Continuous Deployment:
 
