@@ -61,7 +61,7 @@ pipeline {
 
                     try{
                         input message: 'Please confirm to delete the deployment', ok: 'Ready to destroy the config'
-                        desotry = true
+                        destroy = true
                     }
                     catch(err){
                         destroy = false

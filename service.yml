@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadta:
   name: myservice
-  label:
+  labels:
     app: myspringbootapp
 spec:
   selector:
